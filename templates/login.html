@@ -1,0 +1,27 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 省略之前提供的樣式 -->
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form method="post">
+      <div class="form-group">
+        <input type="text" name="username" placeholder="Username" required>
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" placeholder="Password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+    <div class="links">
+      <a href="{{ url_for('register') }}">Register</a> |
+      <a href="#">Forgot Password?</a>
+    </div>
+  </div>
+</body>
+</html>
